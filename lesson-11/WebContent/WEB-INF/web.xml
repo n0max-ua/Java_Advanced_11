@@ -11,12 +11,12 @@
 	</welcome-file-list>
 	
 	<servlet>
-		<servlet-name>reg</servlet-name>
+		<servlet-name>registration</servlet-name>
 		<servlet-class>ua.lviv.lgs.servlet.RegistrationServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>reg</servlet-name>
-		<url-pattern>/reg</url-pattern>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/registration</url-pattern>
 	</servlet-mapping>
 
 </web-app>
