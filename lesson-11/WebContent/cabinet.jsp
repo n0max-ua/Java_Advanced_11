@@ -16,19 +16,19 @@
 	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
 	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
 	crossorigin="anonymous">
-
+<link href="cabinet.css">
 </head>
 
 <body>
 
 	<jsp:include page="header.jsp"></jsp:include>
-	
-	<h1>Welcome to the cabinet  ${userEmail}  </h1> 
+
+	<h3>Welcome, ${userEmail}</h3>
+	<br>
 
 	<div class="container-fluid">
-		<div class="row">
-			<div id="productCards"></div>
-		</div>
+		<div style="justify-content: space-around" class="row"
+			id="productCards"></div>
 	</div>
 
 	<jsp:include page="footer.jsp"></jsp:include>

@@ -11,6 +11,7 @@ body {
 }
 
 .card {
+	width: 200px;
 	margin-bottom: 15px;
 	border-radius: 0;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
@@ -63,3 +64,15 @@ body {
 .lo {
 	background-color: #263238;
 }
+
+h3{
+	padding-left : 20px;
+}
+
+form.createProduct {
+	margin: auto;
+	width: 50%;
+	padding: 5px;
+	border: 1px solid gray;
+}
+

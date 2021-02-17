@@ -68,17 +68,17 @@
 				<ul class="footer_ul2_amrc">
 					<li><a href="#"><i
 							class="fab fa-twitter fleft padding-right"></i> </a>
-					<p>
+						<p>
 							Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
 						</p></li>
 					<li><a href="#"><i
 							class="fab fa-twitter fleft padding-right"></i> </a>
-					<p>
+						<p>
 							Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
 						</p></li>
 					<li><a href="#"><i
 							class="fab fa-twitter fleft padding-right"></i> </a>
-					<p>
+						<p>
 							Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
 						</p></li>
 				</ul>

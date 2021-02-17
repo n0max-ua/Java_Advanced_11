@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cabinet</title>
+<title>Bucket</title>
 
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -16,17 +16,22 @@
 	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
 	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
 	crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/bucket.css">
+
+
 </head>
 <body>
-	<h1>Welcome to the cabinet ${userEmail}</h1>
 
 	<jsp:include page="header.jsp"></jsp:include>
 
 	<div class="container-fluid">
+		<h3>Bucket</h3>
+		<input type="text" id="myInput" onkeyup="myFunction()"
+			placeholder="Search for products.." title="Type in a name">
 
-		<div class="row">
-			<h1>Bucket of Product</h1>
-		</div>
+		<table id="myTable">
+		</table>
 
 	</div>
 
@@ -46,5 +51,6 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/header.js"></script>
+	<script src="js/bucket.js"></script>
 </body>
 </html>

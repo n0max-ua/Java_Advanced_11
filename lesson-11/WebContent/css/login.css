@@ -105,6 +105,7 @@
 }
 
 body {
+	background: url("../image/bg.jpg");
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -113,3 +114,4 @@ body {
 div.login-page div.alert.alert-success {
 	display: none;
 }
+
