@@ -7,8 +7,7 @@ create table user (
     email varchar(55) not null,
     first_name varchar(55) not null,
     last_name varchar(55) not null,
-    role varchar(55) not null,
-    password varchar(55) not null
+    role varchar(55) not null
 );
 
 create table product (

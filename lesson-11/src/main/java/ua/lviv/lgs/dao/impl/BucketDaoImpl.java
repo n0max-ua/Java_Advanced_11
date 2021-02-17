@@ -2,13 +2,14 @@ package ua.lviv.lgs.dao.impl;
 
 import java.awt.IllegalComponentStateException;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.log4j.Logger;
 
 import ua.lviv.lgs.dao.BucketDao;
 import ua.lviv.lgs.domain.Bucket;
@@ -20,6 +21,8 @@ public class BucketDaoImpl implements BucketDao {
 	private static String READ_BY_ID = "select * from bucket where id =?";
 	private static String READ_ALL = "select * from bucket";
 	private static String DELETE_BY_ID = "delete from bucket where id =?";
+	
+	private static Logger LOGER = Logger.getLogger(BucketDaoImpl.class);
 
 	Connection connection;
 	PreparedStatement preparedStatement;
@@ -40,7 +43,7 @@ public class BucketDaoImpl implements BucketDao {
 			rs.next();
 			bucket.setId(rs.getInt(1));
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 		return bucket;
@@ -61,7 +64,7 @@ public class BucketDaoImpl implements BucketDao {
 			String purchaseDate = result.getString("purchase_date");
 			bucket = new Bucket(bucketId, userId, productId, purchaseDate);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 		return bucket;
@@ -79,7 +82,7 @@ public class BucketDaoImpl implements BucketDao {
 			preparedStatement.setInt(1, id);
 			preparedStatement.executeUpdate();
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 	}
@@ -99,7 +102,7 @@ public class BucketDaoImpl implements BucketDao {
 				listOfBuckets.add(new Bucket(bucketId, userId, productId, purchaseDate));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 		return listOfBuckets;

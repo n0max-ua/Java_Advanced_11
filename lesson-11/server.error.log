@@ -1,0 +1,5 @@
+2021-02-05 13:22:31 ERROR BucketDaoImpl:46 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`magazin`.`bucket`, CONSTRAINT `bucket_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+2021-02-05 13:22:45 ERROR BucketDaoImpl:46 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`magazin`.`bucket`, CONSTRAINT `bucket_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+2021-02-05 14:58:48 ERROR UserDaoImpl:148 - java.sql.SQLException: Illegal operation on empty result set.
+2021-02-05 14:58:51 ERROR UserDaoImpl:148 - java.sql.SQLException: Illegal operation on empty result set.
+2021-02-05 15:05:40 ERROR UserDaoImpl:149 - java.sql.SQLException: Illegal operation on empty result set.

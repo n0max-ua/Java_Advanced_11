@@ -1,5 +1,6 @@
 package mainTest;
 
+import ua.lviv.lgs.domain.Bucket;
 import ua.lviv.lgs.service.BucketService;
 import ua.lviv.lgs.service.ProductService;
 import ua.lviv.lgs.service.UserService;
@@ -11,9 +12,9 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		
-		UserService us = new UserServiceImpl();
-		ProductService ps = new ProductServiceImpl();
-		BucketService bs = new BucketServiceImpl();
+//		UserService us = new UserServiceImpl();
+//		ProductService ps = new ProductServiceImpl();
+//		BucketService bs = new BucketServiceImpl();
 		//us.create(new User("wasd@wasd", "wasd", "wasd", "wasd"));
 		//ps.create(new Product("wasd", "wasd", 200.00));
 		
@@ -21,9 +22,9 @@ public class MainTest {
 		//us.delete(1);
 		//us.reatAll().forEach(System.out::println);
 		
-		//bs.create(new Bucket(2, 2));
+		//bs.create(new Bucket(152, 212));
 		
-		bs.reatAll().forEach(System.out::println);
+		//bs.reatAll().forEach(System.out::println);
 		
 		
 

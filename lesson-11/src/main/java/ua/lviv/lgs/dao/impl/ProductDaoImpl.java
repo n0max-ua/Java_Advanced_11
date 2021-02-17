@@ -8,6 +8,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import ua.lviv.lgs.dao.ProductDao;
 import ua.lviv.lgs.domain.Product;
 import ua.lviv.lgs.utils.ConnectionUtils;
@@ -19,6 +21,8 @@ public class ProductDaoImpl implements ProductDao {
 	private static String READ_ALL = "select * from product";
 	private static String UPDATE_BY_ID = "update product set name =?, description =?, price =? where id =? ";
 	private static String DELETE_BY_ID = "delete from product where id =?";
+	
+	private static Logger LOGER = Logger.getLogger(ProductDaoImpl.class);
 
 	Connection connection;
 	PreparedStatement preparedStatement;
@@ -41,7 +45,7 @@ public class ProductDaoImpl implements ProductDao {
 			rs.next();
 			product.setId(rs.getInt(1));
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 		return product;
@@ -62,7 +66,7 @@ public class ProductDaoImpl implements ProductDao {
 			Double price = result.getDouble("price");
 			product = new Product(productId, name, description, price);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 		return product;
@@ -78,7 +82,7 @@ public class ProductDaoImpl implements ProductDao {
 			preparedStatement.setInt(4, id);
 			preparedStatement.executeUpdate();
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 		return product;
@@ -91,7 +95,7 @@ public class ProductDaoImpl implements ProductDao {
 			preparedStatement.setInt(1, id);
 			preparedStatement.executeUpdate();
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 	}
 
@@ -110,7 +114,7 @@ public class ProductDaoImpl implements ProductDao {
 				listOfProducts.add(new Product(productId, name, description, price));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGER.error(e);
 		}
 
 		return listOfProducts;
