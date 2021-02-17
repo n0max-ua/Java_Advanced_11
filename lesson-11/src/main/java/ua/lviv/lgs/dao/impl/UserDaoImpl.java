@@ -106,7 +106,7 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public List<User> reatAll() {
+	public List<User> readAll() {
 		List<User> listOfUsers = new ArrayList<User>();
 
 		try {

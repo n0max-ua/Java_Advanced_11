@@ -53,8 +53,8 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public List<Product> reatAll() {
-		return productDao.reatAll();
+	public List<Product> readAll() {
+		return productDao.readAll();
 	}
 
 }

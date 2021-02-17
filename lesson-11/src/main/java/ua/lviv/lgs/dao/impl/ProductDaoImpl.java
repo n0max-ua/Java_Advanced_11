@@ -100,7 +100,7 @@ public class ProductDaoImpl implements ProductDao {
 	}
 
 	@Override
-	public List<Product> reatAll() {
+	public List<Product> readAll() {
 		List<Product> listOfProducts = new ArrayList<Product>();
 
 		try {

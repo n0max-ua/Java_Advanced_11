@@ -52,8 +52,8 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public List<User> reatAll() {
-		return userDao.reatAll();
+	public List<User> readAll() {
+		return userDao.readAll();
 	}
 
 	@Override

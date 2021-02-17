@@ -12,7 +12,7 @@ import ua.lviv.lgs.service.BucketService;
 
 public class BucketServiceImpl implements BucketService {
 	private static Logger LOGER = Logger.getLogger(BucketServiceImpl.class);
-	private BucketServiceImpl bucketServiceImpl;
+	private static BucketServiceImpl bucketServiceImpl;
 	private BucketDao bucketDao;
 
 	private BucketServiceImpl() {
@@ -24,7 +24,7 @@ public class BucketServiceImpl implements BucketService {
 
 	}
 
-	public BucketService getBucketService() {
+	public static BucketService getBucketService() {
 		if (bucketServiceImpl == null) {
 			bucketServiceImpl = new BucketServiceImpl();
 		}
@@ -53,8 +53,8 @@ public class BucketServiceImpl implements BucketService {
 	}
 
 	@Override
-	public List<Bucket> reatAll() {
-		return bucketDao.reatAll();
+	public List<Bucket> readAll() {
+		return bucketDao.readAll();
 	}
 
 }

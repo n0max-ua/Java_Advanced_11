@@ -88,7 +88,7 @@ public class BucketDaoImpl implements BucketDao {
 	}
 
 	@Override
-	public List<Bucket> reatAll() {
+	public List<Bucket> readAll() {
 		List<Bucket> listOfBuckets = new ArrayList<Bucket>();
 
 		try {
