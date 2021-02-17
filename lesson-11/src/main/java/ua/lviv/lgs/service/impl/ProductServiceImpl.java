@@ -12,7 +12,7 @@ import ua.lviv.lgs.service.ProductService;
 
 public class ProductServiceImpl implements ProductService {
 	private static Logger LOGER = Logger.getLogger(ProductServiceImpl.class);
-	private ProductServiceImpl productServiceImpl;
+	private static ProductServiceImpl productServiceImpl;
 	private ProductDao productDao;
 
 	private ProductServiceImpl() {
@@ -23,7 +23,7 @@ public class ProductServiceImpl implements ProductService {
 		}
 	}
 
-	public ProductService getProductService() {
+	public static ProductService getProductService() {
 		if (productServiceImpl == null) {
 			productServiceImpl = new ProductServiceImpl();
 		}

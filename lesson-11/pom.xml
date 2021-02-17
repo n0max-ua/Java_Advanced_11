@@ -5,11 +5,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>lesson-07</groupId>
-	<artifactId>lesson-07</artifactId>
+	<groupId>lesson-08</groupId>
+	<artifactId>lesson-08</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>lesson-07</name>
+	<name>lesson-08</name>
 	<url>http://www.example.com</url>
 
 	<properties>

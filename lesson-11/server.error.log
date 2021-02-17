@@ -1,0 +1,1 @@
+2021-02-13 16:28:09 ERROR ProductDaoImpl:48 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'price' at row 1
